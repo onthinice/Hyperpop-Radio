@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="en"><head>
+<body>
+    </script> 
+    <script src="https://unpkg.com/webamp@1.4.2/built/webamp.bundle.min.js"></script>
+  <script src="https://unpkg.com/butterchurn@2.6.7/lib/butterchurn.min.js"></script>
+<script src="https://unpkg.com/butterchurn-presets@2.4.7/lib/butterchurnPresets.min.js"></script>
+<script>
+        
+      const Webamp = window.Webamp, webamp = new Webamp({
+      initialTracks: [{
+                metaData: {
+                    artist: "Hyperpop 24/7",
+                    title: " "
+                },
+                url: "https://hyperpop.stream.laut.fm/hyperpop?t302=2024-07-25_04-25-11&uuid=5a2a9ca1-a11e-4cf2-a9ae-31370da60c67",
+                duration: 0.0
+            }],
+      __butterchurnOptions: {
+	importButterchurn: () => Promise.resolve(window.butterchurn),
+	getPresets: () => {
+	    const presets = window.butterchurnPresets.getPresets();
+	    return Object.keys(presets).map((name) => {
+		return {
+		    name,
+		    butterchurnPresetObject: presets[name]
+		};
+	    });
+	},
+	butterchurnOpen: true
+	},
+      initialSkin: { url: './Farhad BlackX.wsz' },
+      });
+      webamp.renderWhenReady(document.body);
+	
+    </script>  
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+        }
+    </style>
+<body>
+    <video class="video-background" autoplay muted loop>
+        <source src="https://images.beta.cosmos.so/57d6bf63-9344-431a-924d-ee90bfc93459.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+             
+<html>
