@@ -1,6 +1,25 @@
 <!DOCTYPE html><html lang="en"><head>
-<body>
-    </script> 
+	
+    <style>
+        body {
+            background-image: url('https://d2w9rnfcy7mm78.cloudfront.net/9524324/original_f30b0cd708ba7e908d0399dff7c1bcae.gif?1605537003?bc=0');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #app {
+            width: 100%;
+            max-width: 600px; /* Adjust this to fit your needs */
+        }
+    </style>
+    
+  <body>
+    </body> 
     <script src="https://unpkg.com/webamp@1.4.2/built/webamp.bundle.min.js"></script>
   <script src="https://unpkg.com/butterchurn@2.6.7/lib/butterchurn.min.js"></script>
 <script src="https://unpkg.com/butterchurn-presets@2.4.7/lib/butterchurnPresets.min.js"></script>
@@ -9,8 +28,8 @@
       const Webamp = window.Webamp, webamp = new Webamp({
       initialTracks: [{
                 metaData: {
-                    artist: "Hyperpop 24/7",
-                    title: " "
+                    artist: "Hyperpop",
+                    title: "Brought to you by laut.fm"
                 },
                 url: "https://hyperpop.stream.laut.fm/hyperpop?t302=2024-07-25_04-25-11&uuid=5a2a9ca1-a11e-4cf2-a9ae-31370da60c67",
                 duration: 0.0
@@ -28,41 +47,9 @@
 	},
 	butterchurnOpen: true
 	},
-      initialSkin: { url: './Farhad BlackX.wsz' },
+      initialSkin: { url: './OurLastHope.wsz' },
       });
       webamp.renderWhenReady(document.body);
 	
     </script>  
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden;
-        }
-        .video-background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1;
-        }
-        .content {
-            position: relative;
-            z-index: 1;
-            color: white;
-            text-align: center;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 100%;
-        }
-    </style>
-<body>
-    <video class="video-background" autoplay muted loop>
-        <source src="https://images.beta.cosmos.so/57d6bf63-9344-431a-924d-ee90bfc93459.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-             
-<html>
+</head></html>
